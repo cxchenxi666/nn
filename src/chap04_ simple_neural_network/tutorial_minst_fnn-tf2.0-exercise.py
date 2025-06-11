@@ -36,6 +36,7 @@ def mnist_dataset():
     # 归一化像素值到[0, 1]
     x = x / 255.0
     x_test = x_test / 255.0
+    # 返回处理后的数据集
     return (x, y), (x_test, y_test)
 
 # In[8]:
