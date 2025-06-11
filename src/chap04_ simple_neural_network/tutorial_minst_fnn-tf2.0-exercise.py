@@ -99,6 +99,7 @@ def compute_accuracy(logits, labels):
     """
     # 获取预测类别（概率最大的类别索引）
     predictions = tf.argmax(logits, axis=1)
+    # 计算准确率
     return tf.reduce_mean(tf.cast(tf.equal(predictions, labels), tf.float32))
 
 @tf.function
