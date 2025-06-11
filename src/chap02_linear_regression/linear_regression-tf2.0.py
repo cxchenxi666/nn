@@ -136,7 +136,7 @@ def train_one_step(model, xs, ys):
     return loss
 
 
-@tf.function
+@tf.function # 使用TensorFlow的图执行模式加速预测
 def predict(model, xs):
     y_preds = model(xs) # 模型前向传播
     return y_preds
