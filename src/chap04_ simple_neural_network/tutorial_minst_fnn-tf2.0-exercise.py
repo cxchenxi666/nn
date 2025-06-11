@@ -97,6 +97,7 @@ def compute_accuracy(logits, labels):
     logits: 模型输出的未归一化分数
     labels: 真实标签
     """
+    # 获取预测类别（概率最大的类别索引）
     predictions = tf.argmax(logits, axis=1)
     return tf.reduce_mean(tf.cast(tf.equal(predictions, labels), tf.float32))
 
