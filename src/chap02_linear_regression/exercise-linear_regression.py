@@ -120,6 +120,8 @@ def least_squares(phi, y, alpha=0.0, solver="pinv"):
         # 对病态矩阵具有良好的数值稳定性
         A = phi.T @ phi + alpha * np.eye(n_features)
         w = np.linalg.pinv(A) @ phi.T @ y
+        # 数学等价于求解以下线性系统:
+        # (ΦᵀΦ + αI)w = Φᵀy
 
     elif solver == "cholesky":
         # 使用 Cholesky 分解求解正规方程
