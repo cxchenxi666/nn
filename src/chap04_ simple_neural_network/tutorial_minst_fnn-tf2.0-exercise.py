@@ -101,6 +101,8 @@ def compute_accuracy(logits, labels):
     predictions = tf.argmax(logits, axis=1)
     # 计算准确率
     return tf.reduce_mean(tf.cast(tf.equal(predictions, labels), tf.float32))
+    # 将布尔值转换为浮点数
+    # 比较预测与标签
 
 @tf.function
 def train_one_step(model, optimizer, x, y):
