@@ -12,7 +12,7 @@
 
 # 导入运行所需模块
 import tensorflow as tf # 深度学习框架
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # 绘图库
 from matplotlib import animation, rc
 from IPython.display import HTML
 import matplotlib.cm as cm
