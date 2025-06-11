@@ -26,6 +26,7 @@ dot_num = 100
 # 生成类别1的数据：均值为(3,6)，标准差为1
 # x坐标：均值为3.0，标准差为1的正态分布随机数
 x_p = np.random.normal(3.0, 1, dot_num) 
+# y坐标：均值为6.0，标准差为1的正态分布随机数
 y_p = np.random.normal(6.0, 1, dot_num)
 y = np.ones(dot_num)  # 标签为1
 C1 = np.array([x_p, y_p, y]).T  # 组合成(x, y, label)格式
