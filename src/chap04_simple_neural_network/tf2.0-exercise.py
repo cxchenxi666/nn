@@ -29,7 +29,7 @@ def softmax(x: tf.Tensor) -> tf.Tensor:
     # 计算指数值
     # shifted_logits是模型的原始输出（logits），形状通常为(batch_size, n_classes)
     # tf.exp计算每个元素的指数值，使所有值为正数
-    exp_logits = tf.exp(shifted_logits)
+    exp_logits = tf.exp(shifted_logits) # 所有值<=1，避免数值溢出
     
     sum_exp = tf.reduce_sum(exp_logits, axis=-1, keepdims=True)
     return exp_logits / sum_exp
