@@ -56,6 +56,7 @@ def load_data(filename, basis_func=gaussian_basis):
         for line in f:
             # 改进: 转换为list
             xys.append(list(map(float, line.strip().split()))) # 读取每行数据
+            # 将xys列表解压为两个元组(x坐标, y坐标)
         xs, ys = zip(*xys) # 解压为特征和标签
         xs, ys = np.asarray(xs), np.asarray(ys) # 转换为numpy数组
         o_x, o_y = xs, ys # 保存原始数据
