@@ -102,7 +102,7 @@ def sigmoid_ce(x, label):
 # 构造测试数据并验证 sigmoid_ce 函数正确性
 test_data = np.random.normal(size=[10])
 # 得到 sigmoid 概率
-prob = tf.nn.sigmoid(test_data)  
+prob = tf.nn.sigmoid(test_data) # shape=(10,)
 # 随机生成 0 或 1 的标签
 label = np.random.randint(0, 2, 10).astype(test_data.dtype)   
 print(label)
