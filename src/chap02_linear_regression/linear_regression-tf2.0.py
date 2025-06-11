@@ -158,6 +158,7 @@ for i in range(1000):  # 进行1000次训练迭代
         print(f"loss is {loss:.4}")   # `:.4` 表示保留4位有效数字
                 
 y_preds = predict(model, xs)
+# 计算预测值与真实值的各项评估指标
 std = evaluate(ys, y_preds)
 print("训练集预测值与真实值的标准差：{:.1f}".format(std))
 
