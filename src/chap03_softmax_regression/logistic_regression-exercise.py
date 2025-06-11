@@ -89,6 +89,8 @@ class LogisticRegression():
         )
         # 定义模型的可训练变量，即权重W和偏置b
         self.trainable_variables = [self.W, self.b]
+        # 注意：在TensorFlow 2.x中，通常不需要显式维护trainable_variables
+        # 因为tf.Variable默认trainable=True时会自动被模型收集
 
     @tf.function
     def __call__(self, inp):
