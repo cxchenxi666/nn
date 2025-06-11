@@ -77,7 +77,7 @@ optimizer = optimizers.Adam()  # 配置Adam优化器，自适应调整学习率�
 
 # In[13]:
 
-@tf.function
+@tf.function # 使用图模式加速计算
 def compute_loss(logits, labels):
     """
     计算交叉熵损失（对所有样本的损失取平均，得到批次平均损失）
