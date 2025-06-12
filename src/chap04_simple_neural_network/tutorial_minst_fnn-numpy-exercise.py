@@ -274,8 +274,8 @@ log = Log()                         # 对数函数
 # 手动实现的前向传播过程：
 h1 = mul_h1.forward(x, W1)  # shape(5, 4)
 h1_relu = relu.forward(h1)  # 对第一层输出h1应用ReLU激活函数（保留正值，负值置0）
-h2 = mul_h2.forward(h1_relu, W2)
-h2_soft = softmax.forward(h2)
+h2 = mul_h2.forward(h1_relu, W2) # [5,5] @ [5,6] → [5,6] 输出层logits
+h2_soft = softmax.forward(h2) 
 h2_log = log.forward(h2_soft)
 # 手动实现的反向传播过程（计算梯度）：
 # 反向传播流程（从后向前）：
