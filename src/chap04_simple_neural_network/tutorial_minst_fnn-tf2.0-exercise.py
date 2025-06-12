@@ -12,6 +12,7 @@ from tensorflow.keras import layers, optimizers, datasets
 
 # 设置TensorFlow日志级别，减少无关信息输出
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # or any {'0', '1', '2'}
+# 此处设置为2，只显示ERROR和FATAL日志
 
 def mnist_dataset():
     # 加载MNIST数据集，包含训练集和测试集的图像及标签
