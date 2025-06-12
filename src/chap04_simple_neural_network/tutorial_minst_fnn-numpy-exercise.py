@@ -299,7 +299,7 @@ with tf.GradientTape() as tape:
     # 对第一层输出应用ReLU激活函数
     h1_relu = tf.nn.relu(h1)
     h2 = tf.matmul(h1_relu, W2)
-    prob = tf.nn.softmax(h2)
+    prob = tf.nn.softmax(h2) # 概率归一化
     log_prob = tf.math.log(prob)
     loss = tf.reduce_sum(label * log_prob)
     # 计算负对数似然损失(Negative Log Likelihood Loss)
