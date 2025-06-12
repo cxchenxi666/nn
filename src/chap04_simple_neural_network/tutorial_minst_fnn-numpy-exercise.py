@@ -285,7 +285,7 @@ h2_grad, W2_grad = mul_h2.backward(h2_soft_grad)  # 第二层权重梯度
 h1_relu_grad = relu.backward(h2_grad)             # ReLU梯度
 h1_grad, W1_grad = mul_h1.backward(h1_relu_grad)  # 第一层权重梯度
 
-print(h2_log_grad)
+print(h2_log_grad) # 形状应为[5,6]，表示每个样本每个类别的梯度
 print('--' * 20)
 # print(W2_grad)
 # 使用 TensorFlow 自动微分验证梯度
