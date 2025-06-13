@@ -6,7 +6,7 @@
 # 导入必要的库
 import os
 import tensorflow as tf
-from tensorflow import keras
+from tensorflow import keras # 引入Keras高级API接口
 from tensorflow.keras import layers, optimizers, datasets
 from tensorflow.keras.layers import Dense, Dropout, Flatten
 from tensorflow.keras.layers import Conv2D, MaxPooling2D
