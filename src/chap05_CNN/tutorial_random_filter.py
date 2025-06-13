@@ -9,7 +9,7 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers, optimizers, datasets
 from tensorflow.keras.layers import Dense, Dropout, Flatten
-from tensorflow.keras.layers import Conv2D, MaxPooling2D
+from tensorflow.keras.layers import Conv2D, MaxPooling2D # 引入卷积层和最大池化层
 import pylab
 from PIL import Image
 import numpy as np
