@@ -7,7 +7,7 @@
 import os
 import tensorflow as tf
 from tensorflow import keras
-from tensorflow.keras import layers, optimizers, datasets
+from tensorflow.keras import layers, optimizers, datasets # 引入Keras的层、优化器和数据集模块
 from tensorflow.keras.layers import Dense, Dropout, Flatten
 from tensorflow.keras.layers import Conv2D, MaxPooling2D
 import pylab
