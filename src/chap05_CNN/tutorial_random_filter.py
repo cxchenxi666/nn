@@ -10,7 +10,7 @@ from tensorflow import keras
 from tensorflow.keras import layers, optimizers, datasets
 from tensorflow.keras.layers import Dense, Dropout, Flatten
 from tensorflow.keras.layers import Conv2D, MaxPooling2D
-import pylab
+import pylab # Matplotlib的绘图接口
 from PIL import Image
 import numpy as np
 
