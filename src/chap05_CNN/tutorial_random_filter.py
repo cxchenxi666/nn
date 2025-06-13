@@ -8,7 +8,7 @@ import os
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers, optimizers, datasets
-from tensorflow.keras.layers import Dense, Dropout, Flatten
+from tensorflow.keras.layers import Dense, Dropout, Flatten # 引入全连接层、Dropout层和展平层
 from tensorflow.keras.layers import Conv2D, MaxPooling2D
 import pylab
 from PIL import Image
